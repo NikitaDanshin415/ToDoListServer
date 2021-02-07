@@ -27,7 +27,7 @@ function addItem() {
         .then(response => response.json())
         .then(() => {
             getItems();
-            addNameTextbox.value = '';
+            addNameTextbox.value = '' ;
         })
         .catch(error => console.error('Unable to add item.', error));
 }
